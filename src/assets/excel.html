@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+<div id="app" class="container">
+  <div class="excel">
+    <div class="excel__header">
+      <input type="text" class="excel__title-input" value="Новая таблица">
+
+      <div>
+        <button><span class="material-icons">delete</span></button>
+        <button><span class="material-icons">exit_to_app</span></button>
+      </div>
+    </div>
+
+    <div class="excel__toolbar">
+      <button><span class="material-icons">format_align_left</span></button>
+      <button><span class="material-icons">format_align_center</span></button>
+      <button><span class="material-icons">format_align_right</span></button>
+      <button><span class="material-icons">format_bold</span></button>
+      <button><span class="material-icons">format_italic</span></button>
+      <button><span class="material-icons">format_underline</span></button>
+    </div>
+
+    <div class="excel__formula">
+      <div class="excel__formula-info">fx</div>
+      <div class="excel__formula-input" contenteditable="true" spellcheck="false"></div>
+    </div>
+
+    <div class="excel__table">
+      <div class="row">
+        <div class="row-info"></div>
+        <div class="row-data">
+          <div class="column">
+            A
+          </div>
+          <div class="column">
+            B
+          </div>
+          <div class="column">
+            C
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-info">1</div>
+        <div class="row-data">
+          <div class="cell selected" contenteditable="true">1</div>
+          <div class="cell" contenteditable="true">2</div>
+          <div class="cell" contenteditable="true">3</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-info">2</div>
+        <div class="row-data">
+          <div class="cell" contenteditable="true">1</div>
+          <div class="cell" contenteditable="true">2</div>
+          <div class="cell" contenteditable="true">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
