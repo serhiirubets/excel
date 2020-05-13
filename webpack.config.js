@@ -12,6 +12,9 @@ const getJsLoaders = () => {
   const loaders = [
     {
       loader: 'babel-loader',
+      options: {
+        plugins: ['@babel/plugin-proposal-class-properties'],
+      },
     },
   ];
 
@@ -34,7 +37,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
-    port: 4000,
+    port: 4040,
     hot: isDev,
   },
   resolve: {
