@@ -27,7 +27,7 @@ export function resizeHandler(e, $root) {
   };
 
   document.onmouseup = () => {
-    $resizer.css({opacity: 0, bottom: '0', right: 0});
+    $resizer.css({opacity: 0, [sideProp]: '0', right: 0});
 
     if (type === 'col') {
       $parent.css({width: value + 'px'});
