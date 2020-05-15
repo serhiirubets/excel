@@ -20,6 +20,6 @@ export class Table extends ExcelComponent {
   }
 
   toHTML() {
-    return createTable(250);
+    return createTable(25);
   }
 }
